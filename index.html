@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indie Lab VN</title>
+  <meta name="description" content="Indie Lab VN - Minimal, useful mobile apps.">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <style>
+    :root { --fg:#111827; --muted:#6B7280; --accent:#EA580C; --bg:#ffffff; --card:#ffffff; --border:#e5e7eb; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 16px}
+    header{border-bottom:1px solid var(--border);background:#fff}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px;border-radius:10px}
+    .brand h1{font-size:18px;margin:0}
+    .hero{padding:56px 0;background:linear-gradient(135deg,#fff8f1 0%, #fff 100%);text-align:center}
+    .hero h2{font-size:36px;margin:0 0 8px}
+    .hero p{margin:0;color:var(--muted);font-size:18px}
+    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:16px;padding:32px 0}
+    @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(min-width:1024px){.grid{grid-template-columns:repeat(4,1fr)}}
+    .card{border:1px solid var(--border);border-radius:14px;background:var(--card);padding:20px;transition:transform .2s ease, box-shadow .2s ease}
+    .card:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(17,24,39,.06)}
+    .card .icon{display:flex;justify-content:center;margin-bottom:12px}
+    .card .icon img{width:72px;height:72px;border-radius:16px}
+    .card h3{font-size:16px;margin:8px 0;text-align:center}
+    .meta{display:flex;justify-content:center;gap:10px;color:#6b7280;font-size:13px}
+    footer{border-top:1px solid var(--border);padding:32px 0;margin-top:24px}
+    .footer-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;font-size:14px;color:#4b5563}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="images\icon.png" alt="Indie Lab VN icon">
+        <h1>Indie Lab VN</h1>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Indie Lab VN</h2>
+        <p>Minimal, private and useful mobile apps.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid">
+          <a class="card" href="apps\simplicoin.html">
+            <div class="icon">
+              <img src="images\simplicoin\icon.png" alt="Simple Calculator icon">
+            </div>
+            <h3>SimpliCoin</h3>
+            <div class="meta">
+              <span>10+ downloads</span>
+            </div>
+          </a>
+          <!-- Add more apps by duplicating this card and editing -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="text-align:center;margin-bottom:12px">
+        <strong>Indie Lab VN</strong>
+      </div>
+      <nav class="footer-links">
+        <a href="https://play.google.com/store/apps/dev" target="_blank" rel="noopener">Google Play Developer</a>
+        <span>•</span>
+        <a href="privacy\index.html">Privacy Policy</a>
+      </nav>
+      <div style="text-align:center;color:#6B7280;font-size:13px;margin-top:12px">© 2025 Indie Lab VN</div>
+    </div>
+  </footer>
+</body>
+</html>
+
