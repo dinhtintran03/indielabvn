@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Memory Studio - Indie Lab VN</title>
+  <meta name="description" content="Capture, organize, and share your travel adventures with Travel Memory Studio.">
+  <link rel="icon" type="image/png" href="/images/icon.png">
+  <style>
+    :root { --fg:#111827; --muted:#6B7280; --accent:#EA580C; --bg:#ffffff; --card:#ffffff; --border:#e5e7eb; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, "Apple Color Emoji","Segoe UI Emoji";color:var(--fg);background:var(--bg);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 16px}
+    header{border-bottom:1px solid var(--border);background:#fff}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px;border-radius:10px}
+    .brand h1{font-size:18px;margin:0}
+    .back{color:#4B5563;font-size:14px;padding:8px 10px;border:1px solid var(--border);border-radius:10px}
+    .back:hover{background:#F9FAFB}
+    .hero{padding:56px 0;background:linear-gradient(135deg,#fff8f1 0%, #fff 100%);text-align:center}
+    .app-icon{width:120px;height:120px;border-radius:24px;margin:0 auto 20px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .hero h2{font-size:36px;margin:0 0 8px}
+    .hero p{margin:0 0 24px;color:var(--muted);font-size:18px;max-width:600px;margin-left:auto;margin-right:auto}
+    .badge-container{margin-top:20px;display:flex;justify-content:center;align-items:center;gap:16px}
+    .content{padding:48px 0}
+    .section{margin-bottom:48px}
+    .section h3{font-size:24px;margin:0 0 16px;text-align:center}
+    .section p{color:var(--muted);text-align:center;max-width:700px;margin:0 auto 32px}
+    .screenshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:24px}
+    .screenshot{border-radius:12px;overflow:hidden;box-shadow:0 4px 12px rgba(0,0,0,0.08);transition:transform .2s ease}
+    .screenshot:hover{transform:scale(1.02)}
+    .screenshot img{width:100%;height:auto;display:block}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:32px}
+    .feature{padding:24px;border:1px solid var(--border);border-radius:12px;background:var(--card)}
+    .feature h4{margin:0 0 8px;font-size:18px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600;font-size:16px;transition:opacity .2s}
+    .btn:hover{opacity:0.9}
+    footer{border-top:1px solid var(--border);padding:32px 0;margin-top:48px}
+    .footer-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;font-size:14px;color:#4b5563}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="../images/icon.png" alt="Indie Lab VN icon">
+        <h1>Indie Lab VN</h1>
+      </a>
+      <a class="back" href="../index.html">← Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <img class="app-icon" src="../images/travel-memory-studio/logo.png" alt="Travel Memory Studio icon">
+        <h2>Travel Memory Studio</h2>
+        <p>Capture, organize, and share your travel adventures</p>
+        
+        <a href="https://travel-memory-studio.vercel.app/" target="_blank" class="btn" style="margin-bottom: 20px;">
+          Visit Website →
+        </a>
+        
+        <!-- Coming Soon on App Store -->
+        <!-- <a href="#" target="_blank" class="btn" style="margin-bottom: 20px;">
+          Download on App Store
+        </a> -->
+        
+        <div class="badge-container">
+          <a href="https://www.producthunt.com/products/travel-memory-studio?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-travel&#0045;memory&#0045;studio" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1036776&theme=light&t=1762927114662" alt="Travel&#0032;Memory&#0032;Studio - Capture&#0044;&#0032;organize&#0044;&#0032;and&#0032;share&#0032;your&#0032;travel&#0032;adventures | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <div class="section">
+          <h3>About Travel Memory Studio</h3>
+          <p>Travel Memory Studio is your perfect companion for documenting and reliving your travel experiences. Create beautiful travel journals, organize your memories, and share your adventures with friends and family.</p>
+        </div>
+
+        <div class="section">
+          <h3>Features</h3>
+          <div class="features">
+            <div class="feature">
+              <h4>📸 Capture Moments</h4>
+              <p>Document your travels with photos, notes, and location tags</p>
+            </div>
+            <div class="feature">
+              <h4>🗺️ Organize Trips</h4>
+              <p>Keep all your travel memories organized by destination and date</p>
+            </div>
+            <div class="feature">
+              <h4>📱 Easy to Use</h4>
+              <p>Simple, intuitive interface designed for travelers</p>
+            </div>
+            <div class="feature">
+              <h4>🔒 Private & Secure</h4>
+              <p>Your memories are yours. We respect your privacy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Screenshots</h3>
+          <div class="screenshots">
+            <div class="screenshot">
+              <img src="../images/travel-memory-studio/screenshots/0B77A373-2F72-4C60-94D4-BD437EB1A4AD.png" alt="Travel Memory Studio Screenshot 1">
+            </div>
+            <div class="screenshot">
+              <img src="../images/travel-memory-studio/screenshots/E1BD8245-65BD-484E-B5EF-DC1CC590F5A6.png" alt="Travel Memory Studio Screenshot 2">
+            </div>
+            <div class="screenshot">
+              <img src="../images/travel-memory-studio/screenshots/EC80188B-14FF-4B1F-B94F-28E29C2C4F31_1_105_c.jpeg" alt="Travel Memory Studio Screenshot 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="text-align:center;margin-bottom:12px">
+        <strong>Indie Lab VN</strong>
+      </div>
+      <nav class="footer-links">
+        <a href="https://play.google.com/store/apps/dev" target="_blank" rel="noopener">Google Play Developer</a>
+        <span>•</span>
+        <a href="../privacy/index.html">Privacy Policy</a>
+        <span>•</span>
+        <a href="/">Back to Home</a>
+      </nav>
+      <div style="text-align:center;color:#6B7280;font-size:13px;margin-top:12px">© 2025 Indie Lab VN</div>
+    </div>
+  </footer>
+</body>
+</html>
