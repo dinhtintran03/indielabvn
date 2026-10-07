@@ -1,4 +1,4 @@
-# Indie Lab VN - Images
+# Indie Lab - Images
 
 Place your assets in the paths referenced by the site:
 
